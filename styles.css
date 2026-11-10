@@ -43,6 +43,7 @@
   .intro{position:relative;top:auto;left:auto;width:100%;margin:16px 0 0}
   .intro h1{max-width:100%;margin:7px auto 0;overflow-wrap:anywhere}
   .wheel-wrap{position:relative;left:auto;top:auto;transform:none;flex:none;margin:15px auto 0}
+  .selection-marker{display:none}
   .wheel-controls{position:relative;left:auto;top:auto;transform:none;max-width:100%;margin:10px auto 0;white-space:normal;justify-content:center;text-align:center}
   .drag-hint{min-width:0;overflow-wrap:anywhere}
   .focus-panel{position:relative;left:auto;top:auto;transform:none;width:min(480px,100%);max-height:none;min-height:0;overflow:visible;margin:14px auto 16px;padding:11px 13px 12px;text-align:center}
