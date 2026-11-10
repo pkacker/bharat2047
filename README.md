@@ -16,7 +16,7 @@ An interactive web app about 24 everyday commitments that citizens can make towa
 
 ## Features
 
-- A 24-spoke Chakra that advances once a second, can be paused, and can be turned by touch, pointer, or arrow keys.
+- A 24-spoke Chakra that advances clockwise once a second, can be paused, and can be turned by touch, pointer, or arrow keys.
 - A selected commitment panel with categories, **See more / See less**, **Start test**, and **Know more**.
 - A 24-question test for each commitment, mixing multiple-choice and written responses. Answers are saved on the device.
 - A topic page covering the problem, a common myth, practical actions, and habits to avoid.
