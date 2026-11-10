@@ -57,7 +57,7 @@ The Firebase CLI must be installed and signed in to an account with access to th
 - `topic-data.js`, `topic-categories.js`, `i18n.js`: commitments, categories, and translations.
 - `settings.js`, `settings.css`: appearance, sound, and language settings.
 - `Ashoka_Chakra.svg`: the Chakra image supplied for this project.
-- `firebase-init.js`: Firebase Analytics initialization.
+- `firebase-init.js`: Firebase Analytics initialization using Hosting's runtime configuration.
 
 ## Project credit
 

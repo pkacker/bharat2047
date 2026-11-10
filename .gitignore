@@ -1,6 +1,12 @@
 node_modules/
 dist/
 .firebase/
+.env
+.env.*
+!.env.example
+firebase-config.local.js
+service-account*.json
+*.pem
 firebase-debug.log
 firebase-debug.*.log
 assets/ashoka-chakra-reference.png
