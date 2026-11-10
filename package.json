@@ -1,0 +1,9 @@
+{
+  "name": "bharat2047",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An interactive Citizen Chakra for everyday commitments toward a developed India by 2047.",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}

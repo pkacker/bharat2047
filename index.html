@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Twenty-four everyday commitments for a developed India by 2047." />
+  <title>Bharat 2047 · The Citizen Chakra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="settings.css" />
+  <script src="topic-data.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="settings.js" defer></script>
+  <script src="topic-categories.js" defer></script>
+  <script src="app.js" defer></script>
+  <script type="module" src="firebase-init.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">✳</span><span>BHARAT <strong>2047</strong></span></div>
+      <div class="top-actions"></div>
+    </header>
+
+    <main class="main-content">
+      <div class="intro"><p class="eyebrow"><span data-i18n="citizenChakra">THE CITIZEN CHAKRA</span> <span class="eyebrow-dot" aria-hidden="true"></span> <span data-i18n="commitments">24 EVERYDAY COMMITMENTS</span></p><h1 data-i18n="hero">A nation moves with its people.</h1></div>
+      <section class="wheel-wrap" aria-label="Interactive Ashoka Chakra">
+        <div class="wheel-stage" id="wheelStage" role="slider" tabindex="0" aria-label="Citizen commitment wheel. Drag or use arrow keys to choose a commitment." aria-valuemin="1" aria-valuemax="24" aria-valuenow="1">
+          <img id="chakra" src="Ashoka_Chakra.svg" alt="" draggable="false" aria-hidden="true" />
+        </div>
+        <div class="selection-marker" aria-hidden="true"><span></span></div>
+      </section>
+      <div class="wheel-controls"><button id="playPause" class="play-button" type="button" aria-label="Pause wheel"><span id="playIcon" aria-hidden="true">Ⅱ</span><span id="playLabel" data-i18n="pauseWheel">Pause wheel</span></button><span class="control-divider"></span><span class="drag-hint" data-i18n="dragHint">Touch or drag to choose a spoke</span></div>
+      <section class="focus-panel" id="focusPanel" aria-label="Selected commitment" aria-live="polite"><div class="focus-topline"><span id="focusNumber">01</span><span class="focus-rule"></span><span id="focusCounter">01 / 24</span></div><h2 id="focusTitle"></h2><p id="focusDescription"></p><div class="category-block"><div class="category-head"><span data-i18n="categories">Categories</span><button id="categoryToggle" type="button" aria-expanded="false" aria-controls="categoryList"></button></div><div id="categoryList" class="category-list"></div></div><div class="focus-actions"><a id="startTest" class="focus-action primary-action" href="test.html?topic=0"><span data-i18n="startTest">Start test</span> <span aria-hidden="true">↗</span></a><a id="knowMore" class="focus-action secondary-action" href="learn.html?topic=0"><span data-i18n="knowMore">Know more</span> <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+
+    <footer class="footer"><div class="countdown-label"><span class="small-star">✳</span><span data-i18n="countdownTo">TO 15 AUGUST 2047</span></div><div class="countdown" aria-label="Countdown to 15 August 2047"><div><strong id="years">20</strong><span data-i18n="years">YEARS</span></div><i>:</i><div><strong id="months">09</strong><span data-i18n="months">MONTHS</span></div><i>:</i><div><strong id="days">05</strong><span data-i18n="days">DAYS</span></div></div><p class="project-credit"><span>A Project By Raksha Kacker</span><span>Grade 7th</span><span>Delhi World Public School,Omicron1A,Greater Noida, Gautam Buddh Nagar, UP</span></p></footer>
+  </div>
+</body>
+</html>
