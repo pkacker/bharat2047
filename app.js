@@ -20,7 +20,7 @@ stage.addEventListener('pointermove',e=>{if(!dragging)return;const current=point
 function finishDrag(){if(!dragging)return;dragging=false;stage.classList.remove('dragging');setAngle(Math.round(angle/15)*15);if(moved)tick()}
 stage.addEventListener('pointerup',finishDrag);stage.addEventListener('pointercancel',finishDrag);
 stage.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowDown','ArrowRight','ArrowUp','Home','End',' '].includes(e.key)){e.preventDefault();setPlaying(false);if(e.key==='Home')setAngle(0);else if(e.key==='End')setAngle(345);else if(e.key!==' ')setAngle(Math.round(angle/15)*15+(e.key==='ArrowRight'||e.key==='ArrowUp'?15:-15));tick()}});
-setInterval(()=>{if(playing&&!dragging){setAngle(Math.round(angle/15)*15+15);tick()}},1000);
+setInterval(()=>{if(playing&&!dragging){setAngle(Math.round(angle/15)*15+15);tick()}},60000/24);
 
 stage.setAttribute('aria-label',t('wheelAria'));
 document.getElementById('focusPanel').setAttribute('aria-label',t('selectedAria'));

@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "mybharatat2047",
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "headers": [
